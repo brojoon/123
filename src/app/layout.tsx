@@ -1,3 +1,5 @@
+"use client";
+import { useState } from 'react';
 import './globals.css'
 import type { Metadata } from 'next'
 
@@ -11,6 +13,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const [res, setRes] = useState();
+  
   return (
     <html>
       <body>{children}</body>
